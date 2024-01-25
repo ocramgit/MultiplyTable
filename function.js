@@ -16,6 +16,7 @@ for (let i = 0; i < inputValue.length; i++) {
       let resultExp = number + operator + multiplyValue[k].textContent;
       result[k].textContent = eval(resultExp);
     }
+    inputValueField.value += inputValue[i].value;
   });
 }
 
